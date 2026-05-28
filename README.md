@@ -1,5 +1,7 @@
 # Dharma Duel: Legends of Ancient India
 
+**[Play in browser](https://mungmanbaoisan.itch.io/dharma-duel-cg)** — click Play in browser on Itch.io, then go fullscreen for the best experience.
+
 A Top Trumps inspired card game featuring 40 legendary Buddhist figures — playable against a smart AI or a friend.
 
 ## What It Does
