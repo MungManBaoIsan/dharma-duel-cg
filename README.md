@@ -276,3 +276,13 @@ The Dharma Council awaits your challenge! 🙏
 ---
 
 🎴 **Dharma Duel** - Where Wisdom Meets Strategy 🎴
+
+---
+
+## Development Log
+
+**28 May 2026 — Shipped to GitHub and Itch.io**
+
+Took the completed v2.9 build and shipped it publicly. Created the GitHub repo with a curated set of 16 files, fixed a PyInstaller path bug so the Windows executable could find its card data after bundling, built the `.exe`, and got the game live on Itch.io. Key lesson: Render is for web apps with servers — Itch.io is the right home for a downloadable desktop game.
+
+See [`JOURNAL.md`](./JOURNAL.md) for the full development log.
