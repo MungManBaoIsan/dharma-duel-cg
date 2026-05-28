@@ -29,7 +29,17 @@ A Top Trumps inspired card game featuring 40 legendary Buddhist figures — play
 
 **Want a standalone executable?** Download the `.exe` from [Itch.io](https://mungmanbaoisan.itch.io/dharma-duel-cg) — no Python needed.
 
+**Play in the browser** at [mungmanbaoisan.itch.io/dharma-duel-cg](https://mungmanbaoisan.itch.io/dharma-duel-cg) — no download needed, works best in fullscreen.
+
 ## My Journey
+
+**29 May 2026 — Browser Version Live on Itch.io**
+
+Got the game running in the browser using pygbag — a tool that converts Python/Pygame to WebAssembly. The web version lives in a separate `dharma_duel_web/` folder so the original game code stays untouched. The game now has both a Windows download and a Play in browser option on Itch.io.
+
+Key lesson: viewport size tweaking produced inconsistent results across different screen sizes. Fullscreen mode solved it cleanly — the browser scales the game correctly to whatever screen the player has.
+
+---
 
 **28 May 2026 — Added a Prompt Library**
 

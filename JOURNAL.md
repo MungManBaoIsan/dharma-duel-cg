@@ -106,3 +106,75 @@ The most useful part of the process was the interview phase — being asked *why
 Session with Claude Code (claude-sonnet-4-6), 28 May 2026. Skills used: `prompt-archivist`, `portfolio-update`.
 
 ---
+
+## 29 May 2026 — Added Browser Version via pygbag
+
+**Type:** Feature
+
+**What I built or did**
+
+Added a Play in browser option to the Itch.io page. The game now works both as a Windows download (.exe) and directly in the browser — no install needed.
+
+**Why I did it this way**
+
+Keeping the original `main.py` untouched was a priority. I created a separate `dharma_duel_web/` folder with copies of the 4 game files and a web-only `main.py` — the only difference is the game loop is `async` and yields each frame with `await asyncio.sleep(0)`, which is what pygbag (the browser conversion tool) requires.
+
+**How it works**
+
+pygbag packages the Python/Pygame code into WebAssembly — a format browsers can run directly. The Pygame runtime loads from a CDN on first visit (~20 second load time), then the game runs at full speed.
+
+**What this means for the app**
+
+Friends can now play instantly from the Itch.io link with no download. The .exe download is still there for better performance.
+
+**What I learned**
+
+The async change is minimal but must be in a separate entry point — touching the original `main.py` risks breaking the desktop version.
+
+**How We Did It**
+
+1. Created `dharma_duel_web/` — copies of card.py, game.py, ui.py, data/cards.json
+2. Wrote web-only `main.py` with async game loop
+3. Built with `python -m pygbag --build dharma_duel_web`
+4. Zipped `build/web/` → `DharmaDuel_Browser.zip` (68KB)
+5. Uploaded to Itch.io, ticked "Play in browser", set viewport 1200×700
+6. Confirmed Play in browser button appears on game page
+
+**References / Conversations**
+
+Session with Claude Code (claude-sonnet-4-6), 29 May 2026. Skills used: `portfolio-update`.
+
+---
+
+## 29 May 2026 — Browser Version Working in Fullscreen
+
+**Type:** Feature / Problem Solving
+
+**What I built or did**
+
+Got the browser version of Dharma Duel working cleanly on Itch.io. The Itch.io embed is now set to "Click to launch in fullscreen" so players get a great experience immediately with no fiddling.
+
+**Why I did it this way**
+
+Viewport tweaking alone couldn't solve the readability problem — results were inconsistent (too small, too vertical, too zoomed depending on the size chosen). The real fix was fullscreen mode, which lets the browser scale the game properly to whatever screen the player has.
+
+**How it works**
+
+The web copy (`dharma_duel_web/`) has its own `ui.py` with fonts and screen scaled up 20% (1440×840, fonts proportionally larger). Original files untouched. pygbag rebuilds from this folder only.
+
+**What I learned**
+
+When viewport tweaking produces inconsistent results, it's a sign the scaling approach is wrong — not that a bigger or smaller number is needed. Fullscreen sidesteps the problem entirely.
+
+**How We Did It**
+
+1. Tried Itch.io viewport size changes — too small, too vertical, too zoomed
+2. Scaled web ui.py up 20% (screen, fonts, cards)
+3. Rebuilt with pygbag, rezipped, re-uploaded to Itch.io
+4. Discovered fullscreen mode looks great — set embed to "Click to launch in fullscreen"
+
+**References / Conversations**
+
+Session with Claude Code (claude-sonnet-4-6), 29 May 2026. Skills used: `portfolio-update`.
+
+---
