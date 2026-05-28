@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.spec.bak
+
+# Dev notes (internal process docs)
+BALANCE_OPTIONS.md
+BALANCE_v2.5.1.md
+BATTLE_AND_STRATEGY.md
+BUDDHA_FINAL_BALANCE.md
+BUILD_EXECUTABLE_GUIDE.md
+CARD_LAYOUT.txt
+CARD_VISIBILITY.md
+CHANGES.md
+DEPLOYMENT_GUIDE.md
+FILE_LIST.txt
+GAME_BALANCE.md
+GAME_FLOW.txt
+LAPTOP_OPTIMIZATION.md
+LEGEND_CARDS.md
+MERIT_SYSTEM.md
+MULTIPLAYER_PLAN.md
+PASS_AND_PLAY.md
+PROGRESS_BAR.md
+PROJECT_SUMMARY.md
+STATUS.md
+TIMING_IMPROVEMENTS.md
+TRADITIONAL_RULES.md
+TURN_SYSTEM.md
+VERSION_2.6.md
+WINDOWS_MAC_GUIDE.md
+
+# Dev scripts
+find_cards.py
+
+# Personal notes
+Journal Entry.txt
+
+# Artifacts
+"{data,assets"
+nul
+
+# OS
+.DS_Store
+Thumbs.db

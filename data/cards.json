@@ -1,0 +1,884 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": "Siddhartha (The Prince)",
+      "archetype": "The Bodhisatta",
+      "fact_file": [
+        "Born in Lumbini as heir to the Sakya clan",
+        "Raised in luxury, shielded from suffering",
+        "Mastered martial arts and scholarly pursuits"
+      ],
+      "famous_story": "Left palace at 29 after seeing the Four Sights: old age, sickness, death, and a wandering ascetic.",
+      "stats": {
+        "power": 45,
+        "wisdom": 60,
+        "resolve": 85,
+        "influence": 70,
+        "transformation": 95,
+        "merit": 75
+      },
+      "is_legend": true,
+      "overall_rating": 71.7,
+      "tier": "silver"
+    },
+    {
+      "id": 2,
+      "name": "King Suddhodana",
+      "archetype": "The Sakya Clan",
+      "fact_file": [
+        "King of the Sakya clan in Kapilavastu",
+        "Father of Siddhartha Gautama",
+        "Tried to prevent his son from becoming an ascetic"
+      ],
+      "famous_story": "Built three palaces to keep Siddhartha content, but ultimately could not prevent his son's spiritual quest.",
+      "stats": {
+        "power": 75,
+        "wisdom": 55,
+        "resolve": 70,
+        "influence": 80,
+        "transformation": 50,
+        "merit": 55
+      },
+      "is_legend": false,
+      "overall_rating": 64.2,
+      "tier": "bronze"
+    },
+    {
+      "id": 3,
+      "name": "Queen Maya",
+      "archetype": "The Sakya Clan",
+      "fact_file": [
+        "Mother of Siddhartha Gautama",
+        "Dreamed of a white elephant before his birth",
+        "Died seven days after giving birth"
+      ],
+      "famous_story": "Her dream of the white elephant entering her womb foretold the birth of a great being who would become Buddha.",
+      "stats": {
+        "power": 40,
+        "wisdom": 65,
+        "resolve": 60,
+        "influence": 55,
+        "transformation": 45,
+        "merit": 70
+      },
+      "is_legend": false,
+      "overall_rating": 55.8,
+      "tier": "bronze"
+    },
+    {
+      "id": 4,
+      "name": "Mahapajapati Gotami",
+      "archetype": "The Sakya Clan",
+      "fact_file": [
+        "Queen Maya's sister and co-wife of Suddhodana",
+        "Raised Siddhartha after Maya's death",
+        "First woman ordained as a bhikkhuni (nun)"
+      ],
+      "famous_story": "After Buddha's initial refusal, Ananda interceded and she became leader of the first bhikkhuni sangha.",
+      "stats": {
+        "power": 50,
+        "wisdom": 70,
+        "resolve": 90,
+        "influence": 75,
+        "transformation": 90,
+        "merit": 90
+      },
+      "is_legend": false,
+      "overall_rating": 77.5,
+      "tier": "silver"
+    },
+    {
+      "id": 5,
+      "name": "Yasodhara (Princess Pimpa)",
+      "archetype": "The Sakya Clan",
+      "fact_file": [
+        "Princess and wife of Siddhartha",
+        "Mother of Rahula",
+        "Later became an arahant bhikkhuni"
+      ],
+      "famous_story": "When Siddhartha left, she cut her hair and wore simple robes, living as if ordained before formal ordination existed.",
+      "stats": {
+        "power": 35,
+        "wisdom": 75,
+        "resolve": 85,
+        "influence": 60,
+        "transformation": 90,
+        "merit": 88
+      },
+      "is_legend": false,
+      "overall_rating": 72.2,
+      "tier": "silver"
+    },
+    {
+      "id": 6,
+      "name": "Rahula",
+      "archetype": "Foremost Disciples",
+      "fact_file": [
+        "Buddha's only son, ordained at age 7",
+        "Foremost disciple in desire for training",
+        "Became arahant as a young man"
+      ],
+      "famous_story": "Trained intensively from childhood, mastering discipline and becoming an arahant through dedication to the practice.",
+      "stats": {
+        "power": 70,
+        "wisdom": 88,
+        "resolve": 92,
+        "influence": 75,
+        "transformation": 88,
+        "merit": 95
+      },
+      "is_legend": false,
+      "overall_rating": 84.7,
+      "tier": "silver"
+    },
+    {
+      "id": 7,
+      "name": "Devadatta",
+      "archetype": "The Adversary",
+      "fact_file": [
+        "Cousin of Siddhartha, brother of Ananda",
+        "Initially a disciple, later became Buddha's rival",
+        "Attempted to kill Buddha and split the Sangha"
+      ],
+      "famous_story": "Released a maddened elephant to kill Buddha, but the elephant bowed before the Awakened One instead.",
+      "stats": {
+        "power": 78,
+        "wisdom": 45,
+        "resolve": 85,
+        "influence": 70,
+        "transformation": 30,
+        "merit": 30
+      },
+      "is_legend": false,
+      "overall_rating": 56.3,
+      "tier": "bronze"
+    },
+    {
+      "id": 8,
+      "name": "Nanda",
+      "archetype": "The Sakya Clan",
+      "fact_file": [
+        "Half-brother of Siddhartha",
+        "Reluctantly ordained on his wedding day",
+        "Eventually became an arahant"
+      ],
+      "famous_story": "Buddha showed him celestial nymphs to overcome his attachment, then taught him true renunciation of all desire.",
+      "stats": {
+        "power": 50,
+        "wisdom": 65,
+        "resolve": 70,
+        "influence": 45,
+        "transformation": 80,
+        "merit": 87
+      },
+      "is_legend": false,
+      "overall_rating": 66.2,
+      "tier": "bronze"
+    },
+    {
+      "id": 9,
+      "name": "The Five Ascetics",
+      "archetype": "First Sangha",
+      "fact_file": [
+        "First five disciples of Buddha",
+        "Practiced extreme asceticism with Siddhartha",
+        "Received the first sermon at Deer Park"
+      ],
+      "famous_story": "Initially dismissed Buddha for ending his ascetic practices, but became the first arahants after hearing the Dhammacakkappavattana Sutta.",
+      "stats": {
+        "power": 55,
+        "wisdom": 75,
+        "resolve": 80,
+        "influence": 65,
+        "transformation": 90,
+        "merit": 94
+      },
+      "is_legend": false,
+      "overall_rating": 76.5,
+      "tier": "silver"
+    },
+    {
+      "id": 10,
+      "name": "Sariputta",
+      "archetype": "Chief Disciples",
+      "fact_file": [
+        "Chief disciple, foremost in wisdom",
+        "Former wandering ascetic and philosopher",
+        "Attained arahantship within days of ordination"
+      ],
+      "famous_story": "Converted after hearing Assaji recite one verse; became Buddha's 'right-hand' disciple and greatest teacher after Buddha himself.",
+      "stats": {
+        "power": 70,
+        "wisdom": 98,
+        "resolve": 85,
+        "influence": 90,
+        "transformation": 95,
+        "merit": 98
+      },
+      "is_legend": false,
+      "overall_rating": 89.3,
+      "tier": "gold"
+    },
+    {
+      "id": 11,
+      "name": "Maha Moggallana",
+      "archetype": "Chief Disciples",
+      "fact_file": [
+        "Chief disciple, foremost in psychic powers",
+        "Childhood friend of Sariputta",
+        "Could travel to celestial and hell realms"
+      ],
+      "famous_story": "Used his psychic powers to shake Indra's palace to dispel the god's pride, demonstrating the supremacy of spiritual attainment.",
+      "stats": {
+        "power": 95,
+        "wisdom": 85,
+        "resolve": 88,
+        "influence": 85,
+        "transformation": 90,
+        "merit": 97
+      },
+      "is_legend": false,
+      "overall_rating": 90.0,
+      "tier": "gold"
+    },
+    {
+      "id": 12,
+      "name": "Maha Kassapa",
+      "archetype": "Foremost Disciples",
+      "fact_file": [
+        "Foremost in ascetic practices (dhutanga)",
+        "Presided over the First Buddhist Council",
+        "Received Buddha's robe, becoming the first patriarch"
+      ],
+      "famous_story": "Buddha once offered to exchange robes with him, signifying Kassapa as his successor in maintaining strict discipline.",
+      "stats": {
+        "power": 75,
+        "wisdom": 90,
+        "resolve": 95,
+        "influence": 88,
+        "transformation": 85,
+        "merit": 96
+      },
+      "is_legend": false,
+      "overall_rating": 88.2,
+      "tier": "gold"
+    },
+    {
+      "id": 13,
+      "name": "Ananda",
+      "archetype": "Foremost Disciples",
+      "fact_file": [
+        "Buddha's personal attendant for 25 years",
+        "Foremost in hearing the teachings",
+        "Recited all suttas at the First Council"
+      ],
+      "famous_story": "Memorized every teaching Buddha gave and recited them at the First Council beginning with 'Thus have I heard...'",
+      "stats": {
+        "power": 60,
+        "wisdom": 88,
+        "resolve": 80,
+        "influence": 85,
+        "transformation": 75,
+        "merit": 95
+      },
+      "is_legend": false,
+      "overall_rating": 80.5,
+      "tier": "silver"
+    },
+    {
+      "id": 14,
+      "name": "Anuruddha",
+      "archetype": "Foremost Disciples",
+      "fact_file": [
+        "Cousin of Buddha",
+        "Foremost in divine eye (clairvoyance)",
+        "Became blind but gained supreme psychic vision"
+      ],
+      "famous_story": "After falling asleep during a teaching, vowed never to sleep again; went blind from strain but developed the divine eye.",
+      "stats": {
+        "power": 85,
+        "wisdom": 82,
+        "resolve": 92,
+        "influence": 70,
+        "transformation": 85,
+        "merit": 96
+      },
+      "is_legend": false,
+      "overall_rating": 85.0,
+      "tier": "gold"
+    },
+    {
+      "id": 15,
+      "name": "Channa",
+      "archetype": "Foremost Disciples",
+      "fact_file": [
+        "Siddhartha's charioteer during the Four Sights",
+        "Accompanied him when he left the palace",
+        "Initially arrogant, later reformed and became arahant"
+      ],
+      "famous_story": "Drove the chariot on the night Siddhartha renounced the world, holding the horse's hooves so they made no sound.",
+      "stats": {
+        "power": 55,
+        "wisdom": 65,
+        "resolve": 75,
+        "influence": 50,
+        "transformation": 80,
+        "merit": 92
+      },
+      "is_legend": false,
+      "overall_rating": 69.5,
+      "tier": "bronze"
+    },
+    {
+      "id": 16,
+      "name": "Upali",
+      "archetype": "Foremost Disciples",
+      "fact_file": [
+        "Former barber, lowest caste",
+        "Foremost in knowledge of Vinaya (monastic rules)",
+        "Recited all Vinaya rules at the First Council"
+      ],
+      "famous_story": "Ordained before Sakyan princes to teach humility; became the greatest authority on monastic discipline despite humble origins.",
+      "stats": {
+        "power": 50,
+        "wisdom": 85,
+        "resolve": 80,
+        "influence": 85,
+        "transformation": 90,
+        "merit": 96
+      },
+      "is_legend": false,
+      "overall_rating": 81.0,
+      "tier": "silver"
+    },
+    {
+      "id": 17,
+      "name": "Angulimala",
+      "archetype": "Redeemed Disciple",
+      "fact_file": [
+        "Former serial killer who wore a garland of fingers",
+        "Converted by Buddha despite killing 999 people",
+        "Became arahant and symbol of redemption"
+      ],
+      "famous_story": "Chased Buddha to kill him for his 1,000th victim but couldn't catch him, leading to his conversion and complete transformation.",
+      "stats": {
+        "power": 90,
+        "wisdom": 70,
+        "resolve": 85,
+        "influence": 60,
+        "transformation": 100,
+        "merit": 98
+      },
+      "is_legend": true,
+      "overall_rating": 83.8,
+      "tier": "silver"
+    },
+    {
+      "id": 18,
+      "name": "Khema",
+      "archetype": "Chief Bhikkhunis",
+      "fact_file": [
+        "Former queen, renowned for her beauty",
+        "Foremost bhikkhuni in wisdom",
+        "Chief female disciple alongside Uppalavanna"
+      ],
+      "famous_story": "Buddha used magic to show her an aging celestial nymph, teaching impermanence and leading to her awakening.",
+      "stats": {
+        "power": 55,
+        "wisdom": 92,
+        "resolve": 82,
+        "influence": 78,
+        "transformation": 88,
+        "merit": 97
+      },
+      "is_legend": false,
+      "overall_rating": 82.0,
+      "tier": "silver"
+    },
+    {
+      "id": 19,
+      "name": "Uppalavanna",
+      "archetype": "Chief Bhikkhunis",
+      "fact_file": [
+        "Foremost bhikkhuni in psychic powers",
+        "Former courtesan of extraordinary beauty",
+        "Chief female disciple alongside Khema"
+      ],
+      "famous_story": "Attained arahantship while meditating on a lotus, her name meaning 'color of a blue lotus.'",
+      "stats": {
+        "power": 88,
+        "wisdom": 80,
+        "resolve": 85,
+        "influence": 75,
+        "transformation": 90,
+        "merit": 96
+      },
+      "is_legend": false,
+      "overall_rating": 85.7,
+      "tier": "gold"
+    },
+    {
+      "id": 20,
+      "name": "Visakha",
+      "archetype": "Chief Laywomen",
+      "fact_file": [
+        "Foremost female lay disciple and benefactor",
+        "Extremely wealthy merchant's daughter",
+        "Built numerous monasteries and supported sangha"
+      ],
+      "famous_story": "Donated the Pubbarama monastery and was granted eight boons by Buddha for her lifelong generosity to the sangha.",
+      "stats": {
+        "power": 45,
+        "wisdom": 75,
+        "resolve": 80,
+        "influence": 90,
+        "transformation": 65,
+        "merit": 82
+      },
+      "is_legend": false,
+      "overall_rating": 72.8,
+      "tier": "silver"
+    },
+    {
+      "id": 21,
+      "name": "Queen Mallika",
+      "archetype": "Chief Laywomen",
+      "fact_file": [
+        "Queen of Kosala, wife of King Pasenadi",
+        "Known for her wisdom and devotion",
+        "Skillfully guided her husband toward Dhamma"
+      ],
+      "famous_story": "When her husband blamed her unfairly, she took responsibility to maintain peace, demonstrating perfect patience and wisdom.",
+      "stats": {
+        "power": 60,
+        "wisdom": 85,
+        "resolve": 75,
+        "influence": 82,
+        "transformation": 70,
+        "merit": 78
+      },
+      "is_legend": false,
+      "overall_rating": 75.0,
+      "tier": "silver"
+    },
+    {
+      "id": 22,
+      "name": "King Bimbisara of Magadha",
+      "archetype": "Royal Patrons",
+      "fact_file": [
+        "First royal patron of Buddha",
+        "Donated the Bamboo Grove monastery",
+        "Powerful ruler of Magadha kingdom"
+      ],
+      "famous_story": "Met Buddha before enlightenment and asked him to return after achieving his goal; became Buddha's first royal supporter.",
+      "stats": {
+        "power": 85,
+        "wisdom": 70,
+        "resolve": 75,
+        "influence": 88,
+        "transformation": 65,
+        "merit": 72
+      },
+      "is_legend": false,
+      "overall_rating": 75.8,
+      "tier": "silver"
+    },
+    {
+      "id": 23,
+      "name": "King Pasenadi of Kosala",
+      "archetype": "Royal Patrons",
+      "fact_file": [
+        "King of Kosala, contemporary of Buddha",
+        "Close friend and devoted follower",
+        "Had many conversations with Buddha recorded in suttas"
+      ],
+      "famous_story": "Once came to Buddha dusty from travel, showing his humility and eagerness to receive teachings despite royal status.",
+      "stats": {
+        "power": 80,
+        "wisdom": 75,
+        "resolve": 70,
+        "influence": 85,
+        "transformation": 68,
+        "merit": 70
+      },
+      "is_legend": false,
+      "overall_rating": 74.7,
+      "tier": "silver"
+    },
+    {
+      "id": 24,
+      "name": "Anathapindika",
+      "archetype": "Foremost Donor",
+      "fact_file": [
+        "Wealthy merchant, foremost in generosity",
+        "Purchased Jetavana grove for Buddha",
+        "Name means 'feeder of the destitute'"
+      ],
+      "famous_story": "Covered the ground with gold coins to purchase Jetavana, creating Buddha's most famous monastery.",
+      "stats": {
+        "power": 50,
+        "wisdom": 72,
+        "resolve": 82,
+        "influence": 85,
+        "transformation": 70,
+        "merit": 80
+      },
+      "is_legend": false,
+      "overall_rating": 73.2,
+      "tier": "silver"
+    },
+    {
+      "id": 25,
+      "name": "Mara & His Retinue",
+      "archetype": "Forces of Māra",
+      "fact_file": [
+        "The tempter, embodiment of death and desire",
+        "Rules the realm of sensual pleasure",
+        "Attempted to prevent Buddha's enlightenment"
+      ],
+      "famous_story": "Attacked Buddha under the Bodhi tree with armies and temptations, but Buddha remained unmoved, touching the earth as witness.",
+      "stats": {
+        "power": 95,
+        "wisdom": 45,
+        "resolve": 85,
+        "influence": 88,
+        "transformation": 20,
+        "merit": 25
+      },
+      "is_legend": false,
+      "overall_rating": 59.7,
+      "tier": "bronze"
+    },
+    {
+      "id": 26,
+      "name": "Mara's Daughters (Tanha, Arati, Raga)",
+      "archetype": "Forces of Māra",
+      "fact_file": [
+        "Craving, Discontent, and Lust personified",
+        "Sent by Mara to tempt Buddha after enlightenment",
+        "Transformed into old women to teach impermanence"
+      ],
+      "famous_story": "Tried to seduce Buddha with various forms, but he transformed them into crones, teaching them about impermanence.",
+      "stats": {
+        "power": 70,
+        "wisdom": 35,
+        "resolve": 60,
+        "influence": 75,
+        "transformation": 40,
+        "merit": 30
+      },
+      "is_legend": false,
+      "overall_rating": 51.7,
+      "tier": "bronze"
+    },
+    {
+      "id": 27,
+      "name": "Mara's Army",
+      "archetype": "Forces of Māra",
+      "fact_file": [
+        "Demonic forces representing mental defilements",
+        "Attacked Buddha on the night of enlightenment",
+        "Represent internal obstacles to awakening"
+      ],
+      "famous_story": "Hurled weapons that became flowers, unleashed storms that became gentle breezes when they approached Buddha's peace.",
+      "stats": {
+        "power": 88,
+        "wisdom": 25,
+        "resolve": 70,
+        "influence": 65,
+        "transformation": 15,
+        "merit": 20
+      },
+      "is_legend": false,
+      "overall_rating": 47.2,
+      "tier": "bronze"
+    },
+    {
+      "id": 28,
+      "name": "Mucalinda Naga",
+      "archetype": "Nāga Protectors",
+      "fact_file": [
+        "Serpent king who protected Buddha",
+        "Sheltered Buddha from storm during meditation",
+        "Coiled seven times and spread his hood as umbrella"
+      ],
+      "famous_story": "During a great storm in Buddha's fifth week after enlightenment, coiled around him seven times and shielded him with his hood.",
+      "stats": {
+        "power": 75,
+        "wisdom": 60,
+        "resolve": 80,
+        "influence": 55,
+        "transformation": 65,
+        "merit": 75
+      },
+      "is_legend": false,
+      "overall_rating": 68.3,
+      "tier": "bronze"
+    },
+    {
+      "id": 29,
+      "name": "Naga Kings",
+      "archetype": "Nāga Protectors",
+      "fact_file": [
+        "Powerful serpent deities of lakes and rivers",
+        "Some became devoted followers of Buddha",
+        "Represent primal forces of nature"
+      ],
+      "famous_story": "Various Naga kings listened to Buddha's teachings and became protectors of the Dhamma in their realms.",
+      "stats": {
+        "power": 80,
+        "wisdom": 55,
+        "resolve": 70,
+        "influence": 60,
+        "transformation": 60,
+        "merit": 65
+      },
+      "is_legend": false,
+      "overall_rating": 65.0,
+      "tier": "bronze"
+    },
+    {
+      "id": 30,
+      "name": "Sakka (Indra)",
+      "archetype": "King of the Devas",
+      "fact_file": [
+        "King of the Thirty-Three Gods",
+        "Previously a human who became a deity through merit",
+        "Frequent visitor and supporter of Buddha"
+      ],
+      "famous_story": "Descended from Tavatimsa heaven multiple times to hear teachings and asked Buddha to teach his mother in heaven.",
+      "stats": {
+        "power": 88,
+        "wisdom": 72,
+        "resolve": 65,
+        "influence": 85,
+        "transformation": 55,
+        "merit": 82
+      },
+      "is_legend": false,
+      "overall_rating": 74.5,
+      "tier": "silver"
+    },
+    {
+      "id": 31,
+      "name": "Four Great Kings",
+      "archetype": "Deva Protectors",
+      "fact_file": [
+        "Guardian deities of the four cardinal directions",
+        "Protect the world and Buddha's teachings",
+        "Rule over various classes of nature spirits"
+      ],
+      "famous_story": "Offered Buddha four bowls after his enlightenment, which he miraculously combined into one.",
+      "stats": {
+        "power": 82,
+        "wisdom": 68,
+        "resolve": 75,
+        "influence": 78,
+        "transformation": 50,
+        "merit": 75
+      },
+      "is_legend": false,
+      "overall_rating": 71.3,
+      "tier": "silver"
+    },
+    {
+      "id": 32,
+      "name": "Maha Brahma Sahampati",
+      "archetype": "Deva God",
+      "fact_file": [
+        "Great Brahma deity, ruler of a heaven realm",
+        "Convinced Buddha to teach after enlightenment",
+        "Represents highest worldly attainment"
+      ],
+      "famous_story": "Descended and begged Buddha three times to teach, saying 'there are beings with little dust in their eyes.'",
+      "stats": {
+        "power": 85,
+        "wisdom": 80,
+        "resolve": 70,
+        "influence": 90,
+        "transformation": 55,
+        "merit": 85
+      },
+      "is_legend": false,
+      "overall_rating": 77.5,
+      "tier": "silver"
+    },
+    {
+      "id": 33,
+      "name": "Vessantara",
+      "archetype": "Jātaka Legend",
+      "fact_file": [
+        "Buddha's previous life as a prince of perfect generosity",
+        "Gave away everything, including his children",
+        "Last human birth before becoming Buddha"
+      ],
+      "famous_story": "Gave away his magical rain-bringing elephant, his children to a brahmin, and his wife, perfecting the virtue of giving.",
+      "stats": {
+        "power": 50,
+        "wisdom": 75,
+        "resolve": 90,
+        "influence": 60,
+        "transformation": 85,
+        "merit": 88
+      },
+      "is_legend": true,
+      "overall_rating": 74.7,
+      "tier": "silver"
+    },
+    {
+      "id": 34,
+      "name": "Buddha",
+      "archetype": "The Awakened One",
+      "fact_file": [
+        "Fully awakened one who discovered the Middle Way",
+        "Founded Buddhism and taught for 45 years",
+        "Achieved complete liberation from suffering"
+      ],
+      "famous_story": "Attained enlightenment under the Bodhi tree after defeating Mara, becoming the Awakened One who shows the path to Nibbana.",
+      "stats": {
+        "power": 95,
+        "wisdom": 100,
+        "resolve": 100,
+        "influence": 90,
+        "transformation": 100,
+        "merit": 100
+      },
+      "is_legend": true,
+      "overall_rating": 97.5,
+      "tier": "platinum"
+    },
+    {
+      "id": 35,
+      "name": "Añña Kondañña",
+      "archetype": "Foremost Disciples",
+      "fact_file": [
+        "First person to become arahant after Buddha",
+        "Eldest of the Five Ascetics",
+        "Declared 'Añña' (Knowledge) at enlightenment"
+      ],
+      "famous_story": "Upon hearing Buddha's first sermon, he attained stream-entry. Shortly after, became the first arahant, declaring 'I understand!'",
+      "stats": {
+        "power": 82,
+        "wisdom": 92,
+        "resolve": 90,
+        "influence": 88,
+        "transformation": 95,
+        "merit": 97
+      },
+      "is_legend": false,
+      "overall_rating": 90.7,
+      "tier": "gold"
+    },
+    {
+      "id": 36,
+      "name": "Kisa Gotami",
+      "archetype": "Enlightened Nun",
+      "fact_file": [
+        "Lost her only child and was driven to madness by grief",
+        "Buddha taught her about impermanence through mustard seed parable",
+        "Became an arahant and foremost in wearing coarse robes"
+      ],
+      "famous_story": "Seeking to revive her dead child, Buddha sent her to find mustard seeds from a house untouched by death. Finding none, she understood the universality of suffering and impermanence.",
+      "stats": {
+        "power": 45,
+        "wisdom": 88,
+        "resolve": 92,
+        "influence": 60,
+        "transformation": 95,
+        "merit": 90
+      },
+      "is_legend": false,
+      "overall_rating": 78.3,
+      "tier": "silver"
+    },
+    {
+      "id": 37,
+      "name": "Emperor Ashoka",
+      "archetype": "Buddhist Emperor",
+      "fact_file": [
+        "Unified most of India under Maurya Empire",
+        "Converted to Buddhism after bloody Kalinga War",
+        "Erected pillars with Buddhist teachings across empire"
+      ],
+      "famous_story": "After witnessing the carnage of the Kalinga War, Ashoka embraced Buddhism and dedicated his reign to spreading the Dharma through edicts, pillars, and humanitarian works.",
+      "stats": {
+        "power": 92,
+        "wisdom": 75,
+        "resolve": 88,
+        "influence": 95,
+        "transformation": 90,
+        "merit": 85
+      },
+      "is_legend": false,
+      "overall_rating": 87.5,
+      "tier": "gold"
+    },
+    {
+      "id": 38,
+      "name": "Sujata",
+      "archetype": "Benefactor",
+      "fact_file": [
+        "Village girl who offered milk rice to starving Siddhartha",
+        "Her offering saved him from death by asceticism",
+        "Enabled the Middle Way and Buddha's enlightenment"
+      ],
+      "famous_story": "Seeing the emaciated ascetic near death, Sujata offered nourishing milk rice. This simple act of compassion saved his life and led him to discover the Middle Way.",
+      "stats": {
+        "power": 35,
+        "wisdom": 70,
+        "resolve": 65,
+        "influence": 50,
+        "transformation": 85,
+        "merit": 92
+      },
+      "is_legend": false,
+      "overall_rating": 66.2,
+      "tier": "bronze"
+    },
+    {
+      "id": 39,
+      "name": "Amrapali",
+      "archetype": "Reformed Courtesan",
+      "fact_file": [
+        "Renowned courtesan of Vesali, known for beauty and wealth",
+        "Offered her mango grove to Buddha and the Sangha",
+        "Became a nun and attained enlightenment"
+      ],
+      "famous_story": "Despite her life of luxury and sensual pleasure, Amrapali recognized the emptiness of worldly pursuits. She ordained as a nun and achieved arahantship.",
+      "stats": {
+        "power": 55,
+        "wisdom": 82,
+        "resolve": 88,
+        "influence": 78,
+        "transformation": 98,
+        "merit": 86
+      },
+      "is_legend": false,
+      "overall_rating": 81.2,
+      "tier": "silver"
+    },
+    {
+      "id": 40,
+      "name": "Devaputra Mara",
+      "archetype": "Deva of Delusion",
+      "fact_file": [
+        "Divine form of Mara, god of death and desire",
+        "Rules over the realm of sensual pleasure",
+        "Tempted Buddha throughout his teaching career"
+      ],
+      "famous_story": "In divine form, Mara attempted to dissuade Buddha from teaching, claiming none would understand the profound Dharma. Buddha rejected this counsel of despair.",
+      "stats": {
+        "power": 88,
+        "wisdom": 70,
+        "resolve": 82,
+        "influence": 90,
+        "transformation": 25,
+        "merit": 35
+      },
+      "is_legend": false,
+      "overall_rating": 65.0,
+      "tier": "bronze"
+    }
+  ]
+}
