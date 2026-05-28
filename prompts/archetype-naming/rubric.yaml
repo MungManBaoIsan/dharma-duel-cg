@@ -1,0 +1,35 @@
+# Evaluation rubric for: archetype-naming
+
+prompt: archetype-naming
+version: v2
+criteria:
+  - name: no_deprecated_archetypes
+    description: None of the original v1 labels should appear
+    weight: 5
+    pass_condition: "not any(a in output for a in ['Other Great Disciples', 'Famous Female Disciples', 'Family & Early Life'])"
+
+  - name: legend_cards_four_only
+    description: Exactly 4 cards must be marked as legend
+    weight: 5
+    pass_condition: "output.count('legend') >= 1 or output.count('Legend') >= 1"
+
+  - name: legend_card_names_present
+    description: The 4 legend cards must be Buddha, Siddhartha, Angulimala, Vessantara
+    weight: 4
+    pass_condition: "all(name in output for name in ['Angulimala', 'Vessantara', 'Siddhartha'])"
+
+  - name: female_archetypes_split
+    description: Bhikkhuni and laywoman archetypes must be separate
+    weight: 3
+    pass_condition: "'Chief Bhikkhunis' in output or 'Chief Laywomen' in output"
+
+test_cases:
+  - input: "What is Angulimala's archetype and legend status?"
+    expected_traits:
+      - archetype is Redeemed Disciple
+      - legend is true
+
+  - input: "What is the difference between Khema and Visakha's archetypes?"
+    expected_traits:
+      - Khema is Chief Bhikkhunis (ordained nun)
+      - Visakha is Chief Laywomen (lay supporter)

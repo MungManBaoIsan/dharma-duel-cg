@@ -1,0 +1,138 @@
+name: Build Executables
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install pygame pyinstaller
+      
+      - name: Build Windows executable
+        run: |
+          cd dharma_duel_cg
+          pyinstaller dharma_duel.spec
+      
+      - name: Package Windows distribution
+        run: |
+          mkdir DharmaDuel_Windows
+          copy dharma_duel_cg\dist\DharmaDuel.exe DharmaDuel_Windows\
+          xcopy /E /I dharma_duel_cg\data DharmaDuel_Windows\data
+          xcopy /E /I dharma_duel_cg\assets DharmaDuel_Windows\assets
+          copy dharma_duel_cg\PLAYER_GUIDE.md DharmaDuel_Windows\README.txt
+      
+      - name: Create zip
+        run: |
+          Compress-Archive -Path DharmaDuel_Windows -DestinationPath DharmaDuel_Windows.zip
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: windows-build
+          path: DharmaDuel_Windows.zip
+
+  build-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip3 install pygame pyinstaller
+      
+      - name: Build Mac executable
+        run: |
+          cd dharma_duel_cg
+          pyinstaller dharma_duel.spec
+      
+      - name: Package Mac distribution
+        run: |
+          mkdir DharmaDuel_Mac
+          cp -r dharma_duel_cg/dist/DharmaDuel.app DharmaDuel_Mac/
+          cp -r dharma_duel_cg/data DharmaDuel_Mac/
+          cp -r dharma_duel_cg/assets DharmaDuel_Mac/
+          cp dharma_duel_cg/PLAYER_GUIDE.md DharmaDuel_Mac/README.txt
+      
+      - name: Create zip
+        run: |
+          zip -r DharmaDuel_Mac.zip DharmaDuel_Mac/
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: mac-build
+          path: DharmaDuel_Mac.zip
+
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install pygame pyinstaller
+      
+      - name: Build Linux executable
+        run: |
+          cd dharma_duel_cg
+          pyinstaller dharma_duel.spec
+      
+      - name: Package Linux distribution
+        run: |
+          mkdir DharmaDuel_Linux
+          cp dharma_duel_cg/dist/DharmaDuel DharmaDuel_Linux/
+          cp -r dharma_duel_cg/data DharmaDuel_Linux/
+          cp -r dharma_duel_cg/assets DharmaDuel_Linux/
+          cp dharma_duel_cg/PLAYER_GUIDE.md DharmaDuel_Linux/README.txt
+          chmod +x DharmaDuel_Linux/DharmaDuel
+      
+      - name: Create zip
+        run: |
+          zip -r DharmaDuel_Linux.zip DharmaDuel_Linux/
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: linux-build
+          path: DharmaDuel_Linux.zip
+
+  create-release:
+    needs: [build-windows, build-macos, build-linux]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v3
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            windows-build/DharmaDuel_Windows.zip
+            mac-build/DharmaDuel_Mac.zip
+            linux-build/DharmaDuel_Linux.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

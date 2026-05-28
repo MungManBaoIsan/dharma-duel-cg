@@ -1,0 +1,91 @@
+{
+  "prompt": "game-mechanics",
+  "timestamp": "2026-05-28T22:18:40.188384+00:00",
+  "cases_run": 2,
+  "avg_score": 1.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "Explain how the turn system works when a player wins a round"
+      },
+      "output": "When a player wins a round in Dharma Duel:\n\n1. The winner takes both cards and places them at the bottom of their deck.\n2. The round_winner becomes the active_player for the next round (winner controls).\n3. The active_player selects a stat on their own card; the opponent's card is hidden (showing the Dharmachakra wheel) until after selection.\n4. The game_mode flag (computer or player) determines whether the computer auto-selects or waits for human input.\n5. After both stats are compared, the is_player_card determines which side was clickable.\n6. The result screen shows NEXT ROUND button - no auto-advance, player clicks to continue.\n\nWinning streaks are possible: keep winning and active_player stays set to you.\nTies send cards to the battle_pile (battle pile grows with each successive tie).\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "winner_becomes_active_player",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "opponent_card_hidden_before_selection",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "no_auto_advance",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "pass_and_play_right_card_clickable",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "battle_pile_accumulates",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Explain what happens when both cards tie on the selected stat"
+      },
+      "output": "When both cards tie on the selected stat:\n\n1. Both cards go to the battle_pile (battle pile). The active_player remains unchanged.\n2. Each player draws a fresh top card from their deck.\n3. The same active_player selects a new stat from their new card. The opponent's card stays hidden (dharmachakra wheel / is_player_card remains false for opponent).\n4. If another tie: battle pile grows again (4, 6, 8+ cards).\n5. First player to win a non-tie round takes ALL cards: battle pile plus the two current top cards.\n\nThe NEXT ROUND button only appears after the battle resolves. game_mode determines computer vs human turn handling (round_winner logic applies).\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "winner_becomes_active_player",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "opponent_card_hidden_before_selection",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "no_auto_advance",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "pass_and_play_right_card_clickable",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "battle_pile_accumulates",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

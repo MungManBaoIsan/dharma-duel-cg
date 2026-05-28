@@ -1,0 +1,29 @@
+{
+  "prompt": "stat-system-redesign",
+  "timestamp": "2026-05-28T21:52:01.537642+00:00",
+  "cases_run": 2,
+  "avg_score": 0.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What is Angulimala's merit score and why?"
+      },
+      "output": "",
+      "score": null,
+      "passed": null,
+      "criteria": []
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Why was Mythic Significance replaced with Merit?"
+      },
+      "output": "",
+      "score": null,
+      "passed": null,
+      "criteria": []
+    }
+  ]
+}

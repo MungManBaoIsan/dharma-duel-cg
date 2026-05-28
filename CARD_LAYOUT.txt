@@ -1,0 +1,65 @@
+
+╔════════════════════════════════════════════════════════╗
+║                    CARD LAYOUT                         ║
+╠════════════════════════════════════════════════════════╣
+║                                                        ║
+║  Character Name (large, bold)                          ║
+║  Archetype Category (small, gray)                      ║
+║  ────────────────────────────────────                  ║
+║                                                        ║
+║  FACT FILE:                                            ║
+║  • First interesting fact                             ║
+║  • Second interesting fact                            ║
+║  • Third interesting fact                             ║
+║                                                        ║
+║  ────────────────────────────────────                  ║
+║                                                        ║
+║  STATS (clickable on your turn):                       ║
+║  ┌─────────────────────────────────┐                  ║
+║  │ Power                       XX  │                  ║
+║  └─────────────────────────────────┘                  ║
+║  ┌─────────────────────────────────┐                  ║
+║  │ Wisdom                      XX  │                  ║
+║  └─────────────────────────────────┘                  ║
+║  ┌─────────────────────────────────┐                  ║
+║  │ Resolve                     XX  │                  ║
+║  └─────────────────────────────────┘                  ║
+║  ┌─────────────────────────────────┐                  ║
+║  │ Influence                   XX  │                  ║
+║  └─────────────────────────────────┘                  ║
+║  ┌─────────────────────────────────┐                  ║
+║  │ Transformation              XX  │                  ║
+║  └─────────────────────────────────┘                  ║
+║  ┌─────────────────────────────────┐                  ║
+║  │ Mythic Significance         XX  │                  ║
+║  └─────────────────────────────────┘                  ║
+║                                                        ║
+║  ────────────────────────────────────                  ║
+║                                                        ║
+║  Famous Story:                                         ║
+║  A brief 1-2 line description of the                   ║
+║  character'''s most famous moment or story.            ║
+║                                                        ║
+╚════════════════════════════════════════════════════════╝
+
+EXAMPLE - Angulimala Card:
+╔════════════════════════════════════════════════════════╗
+║  Angulimala                                            ║
+║  Other Great Disciples                                 ║
+║  ────────────────────────────────────                  ║
+║  • Former serial killer who wore garland of fingers    ║
+║  • Converted by Buddha despite killing 999 people     ║
+║  • Became arahant and symbol of redemption            ║
+║  ────────────────────────────────────────              ║
+║  Power                                      90         ║
+║  Wisdom                                     70         ║
+║  Resolve                                    85         ║
+║  Influence                                  60         ║
+║  Transformation                            100         ║
+║  Mythic Significance                        88         ║
+║  ────────────────────────────────────                  ║
+║  Famous Story:                                         ║
+║  Chased Buddha to kill him for his 1,000th victim     ║
+║  but couldn'''t catch him, leading to his conversion.  ║
+╚════════════════════════════════════════════════════════╝
+

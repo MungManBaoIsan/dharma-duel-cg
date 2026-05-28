@@ -1,0 +1,35 @@
+# Evaluation rubric for: stat-system-redesign
+
+prompt: stat-system-redesign
+version: v2
+criteria:
+  - name: merit_field_replaces_mythic
+    description: Output must reference merit and not mythic_significance
+    weight: 5
+    pass_condition: "'merit' in output.lower() and 'mythic_significance' not in output"
+
+  - name: merit_scale_respected
+    description: Buddha merit must be 100 and arahant figures must be referenced at 95-98
+    weight: 4
+    pass_condition: "'100' in output or 'arahant' in output.lower()"
+
+  - name: antagonist_merit_low
+    description: Mara and Devadatta must be described as having low merit
+    weight: 3
+    pass_condition: "any(name in output for name in ['Mara', 'Devadatta'])"
+
+  - name: canonical_source_cited
+    description: Output must reference the canonical source for the scale
+    weight: 3
+    pass_condition: "'Etadagga' in output or 'Four Stages' in output or 'Pali' in output or 'canon' in output.lower()"
+
+test_cases:
+  - input: "What is Angulimala's merit score and why?"
+    expected_traits:
+      - merit is 95-98 (arahant level)
+      - references his achievement of full enlightenment
+
+  - input: "Why was Mythic Significance replaced with Merit?"
+    expected_traits:
+      - mentions canonical grounding
+      - mentions Four Stages of Enlightenment or Etadagga Sutta

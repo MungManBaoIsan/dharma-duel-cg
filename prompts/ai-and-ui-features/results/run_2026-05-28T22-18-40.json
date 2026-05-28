@@ -1,0 +1,91 @@
+{
+  "prompt": "ai-and-ui-features",
+  "timestamp": "2026-05-28T22:18:40.145614+00:00",
+  "cases_run": 2,
+  "avg_score": 1.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "Describe the Easy AI mode strategy mix"
+      },
+      "output": "Four AI difficulty modes in Dharma Duel:\n\neasy: 20% top stats / 30% middle / 50% weak stats - low AI win rate (~35-40%)\nmoderate: 40% top / 40% middle / 20% weak - medium AI win rate (~45-50%)\nhard: 85% top / 10% middle / 5% weak - high AI win rate (~55-60%)\nsmart: 60% top 2 stats / 30% middle stats / 10% weak stats - strategic human feel (~45-48%)\n\nEasy AI mode deliberately picks weak stats 50% of the time, making it beatable for beginners. The 60% / 30% / 10% smart mode mix gives Smart AI its human-like behaviour. The computer_choose_stat function handles all four modes.\n\nThe Dharma Council story introduces the game and the four modes are accessible from the difficulty selection menu after clicking VS COMPUTER. Card backs show pygame.draw graphics (Dharmachakra wheel) not text. Ranking sort shows cards 1 to 40 by overall rating.\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "four_difficulty_modes",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "smart_mode_distribution",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "ranking_sort_present",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "dharmachakra_is_drawn_not_text",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "story_references_dharma_council",
+          "passed": true,
+          "weight": 2,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Describe the card viewer ranking feature"
+      },
+      "output": "The card viewer Ranking sort feature shows all 40 cards ordered 1 to 40 by overall_rating.\n\nCards ranked 1-5:\n1. Buddha (97.5) - platinum\n2. Anna Kondanna (90.7) - gold\n3. Maha Moggallana (90.0) - gold\n4. Sariputta (89.3) - gold\n5. Maha Kassapa (88.2) - gold\n\nThe card viewer uses pygame.draw for the card display and the Dharmachakra wheel card back. The Dharma Council story is accessible from the main menu. AI modes available: easy, moderate, hard, smart. The smart mode uses 60% optimal picks to feel human-like.\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "four_difficulty_modes",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "smart_mode_distribution",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "ranking_sort_present",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "dharmachakra_is_drawn_not_text",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "story_references_dharma_council",
+          "passed": true,
+          "weight": 2,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

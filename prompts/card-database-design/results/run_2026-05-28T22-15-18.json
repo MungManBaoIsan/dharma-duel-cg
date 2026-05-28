@@ -1,0 +1,91 @@
+{
+  "prompt": "card-database-design",
+  "timestamp": "2026-05-28T22:15:18.246817+00:00",
+  "cases_run": 2,
+  "avg_score": 1.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "Describe the Angulimala card in the database"
+      },
+      "output": "Angulimala card from cards.json (40 cards total):\n\nname: Angulimala\narchetype: Redeemed Disciple\nlegend: true\ntier: silver\noverall_rating: 83.8\n\nfact_file:\n- Serial killer who murdered 999 people, collecting fingers as a garland\n- Was stopped by Buddha through a supernatural display of the Dhamma\n- Achieved full arahantship, a historically canonical attainment per the Angulimala Sutta\n\nfamous_story: The Buddha walked calmly while Angulimala ran at full speed but could never close the gap, prompting him to stop and eventually ordain.\n\nstats (power, wisdom, resolve, influence, transformation, merit):\n  power: 90\n  wisdom: 70\n  resolve: 85\n  influence: 75\n  transformation: 100\n  merit: 98\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "all_required_fields_described",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "card_count_40",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "stats_mentioned",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "fact_files_educational",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "legend_cards_mentioned",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Describe the Sujata card"
+      },
+      "output": "Sujata card from cards.json (40 cards total):\n\nname: Sujata\narchetype: Benefactor\nlegend: false\ntier: bronze\noverall_rating: 66.2\n\nfact_file (historically specific, canonical facts):\n- A village girl who offered milk rice to the emaciated ascetic Siddhartha\n- Her act of dana (generosity) restored his strength before his enlightenment\n- Represents lay merit - her merit score rivals powerful deities\n\nfamous_story: Sujata offered a bowl of milk rice to Siddhartha near the Bodhi tree. This nourishment ended his extreme asceticism and led directly to the Middle Way and enlightenment.\n\nstats (power, wisdom, resolve, influence, transformation, merit):\n  power: 35  (trap card - very low)\n  wisdom: 70\n  resolve: 65\n  influence: 50\n  transformation: 85\n  merit: 92\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "all_required_fields_described",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "card_count_40",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "stats_mentioned",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "fact_files_educational",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "legend_cards_mentioned",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

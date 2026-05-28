@@ -1,0 +1,43 @@
+# Evaluation rubric for: balance-tuning
+
+prompt: balance-tuning
+version: v2
+criteria:
+  - name: buddha_not_all_100s
+    description: Buddha must have at least Power and Influence below 100
+    weight: 5
+    pass_condition: "'95' in output or 'power' in output.lower()"
+
+  - name: buddha_power_95
+    description: Buddha Power must be 95 (ties with Moggallana and Mara, beats all others)
+    weight: 4
+    pass_condition: "'95' in output"
+
+  - name: overall_ratings_present
+    description: Output must reference overall ratings or average scores
+    weight: 3
+    pass_condition: "'overall_rating' in output or 'rating' in output.lower()"
+
+  - name: tier_assignments_mentioned
+    description: Output must reference the tier system (platinum/gold/silver/bronze)
+    weight: 4
+    pass_condition: "any(t in output.lower() for t in ['platinum', 'gold', 'silver', 'bronze'])"
+
+  - name: game_balance_near_50_50
+    description: Balance simulation result must be close to 50/50
+    weight: 3
+    pass_condition: "'49' in output or '50' in output or '51' in output"
+
+test_cases:
+  - input: "What are Buddha's final stats and overall rating?"
+    expected_traits:
+      - power is 95
+      - wisdom is 100
+      - influence is 90
+      - overall rating is 97.5
+      - tier is platinum
+
+  - input: "Which card can beat Buddha on Influence?"
+    expected_traits:
+      - Emperor Ashoka with Influence 95
+      - only one card beats Buddha on any stat

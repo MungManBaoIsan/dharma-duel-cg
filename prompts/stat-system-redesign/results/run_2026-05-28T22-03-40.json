@@ -1,0 +1,79 @@
+{
+  "prompt": "stat-system-redesign",
+  "timestamp": "2026-05-28T22:03:40.645232+00:00",
+  "cases_run": 2,
+  "avg_score": 0.4,
+  "all_passed": false,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What is Angulimala's merit score and why?"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "merit_field_replaces_mythic",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "merit_scale_respected",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "antagonist_merit_low",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "canonical_source_cited",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Why was Mythic Significance replaced with Merit?"
+      },
+      "output": "Mythic Significance was replaced with Merit for the following reasons:\n\n1. Mythic Significance was not verifiable from any canonical Pali source. Two people with equal Buddhist knowledge could assign different scores to the same figure.\n\n2. Merit (punna) is a genuine Buddhist concept found throughout the Pali Canon. The Four Stages of Enlightenment provide a precise canonical scale.\n\n3. The Etadagga Sutta (AN 1.188-234) explicitly ranks disciples in various qualities, providing direct textual evidence for merit assignments.\n\nMerit scale based on Four Stages:\n- 100 = Samma-Sambuddha (Buddha alone)\n- 95-98 = Arahant (fully enlightened)\n- 85-92 = Non-returner (Anagami)\n- 75-82 = Once-returner (Sakadagami)\n- 65-72 = Stream-enterer (Sotapanna)\n\nThis raised historical accuracy from approximately 50-60% to 85-90%.\n",
+      "score": 0.8,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "merit_field_replaces_mythic",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "merit_scale_respected",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "antagonist_merit_low",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "canonical_source_cited",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

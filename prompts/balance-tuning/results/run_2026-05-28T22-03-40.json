@@ -1,0 +1,91 @@
+{
+  "prompt": "balance-tuning",
+  "timestamp": "2026-05-28T22:03:40.604919+00:00",
+  "cases_run": 2,
+  "avg_score": 0.237,
+  "all_passed": false,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What are Buddha's final stats and overall rating?"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "buddha_not_all_100s",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "buddha_power_95",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "overall_ratings_present",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "tier_assignments_mentioned",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "game_balance_near_50_50",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Which card can beat Buddha on Influence?"
+      },
+      "output": "Emperor Ashoka is the only card that can beat Buddha on Influence.\n\nEmperor Ashoka Influence: 95\nBuddha Influence: 90\n\nAshoka beats Buddha by 5 points on this stat. This is the only stat where any card reliably beats Buddha rather than ties.\n\nThis is historically meaningful - Ashoka's political empire and role in spreading Buddhism across Asia gave him unparalleled worldly influence, exceeding what the Buddha himself exercised as an individual teacher.\n\nSeveral cards tie Buddha on Influence at 90: Sariputta, Visakha, Brahma Sahampati, Devaputra Mara.\n\nBuddha remains unbeatable on Resolve, Transformation, and Merit (all 100).\n",
+      "score": 0.474,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "buddha_not_all_100s",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "buddha_power_95",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "overall_ratings_present",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "tier_assignments_mentioned",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "game_balance_near_50_50",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

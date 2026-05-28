@@ -1,0 +1,44 @@
+# Evaluation rubric for: card-database-design
+
+prompt: card-database-design
+version: v1
+criteria:
+  - name: all_required_fields_described
+    description: Output must describe all required card fields
+    weight: 5
+    pass_condition: "all(f in output for f in ['name', 'archetype', 'fact_file', 'famous_story'])"
+
+  - name: card_count_40
+    description: Database must contain 40 cards
+    weight: 5
+    pass_condition: "'40' in output"
+
+  - name: stats_mentioned
+    description: All 6 stat names must be present in output
+    weight: 4
+    pass_condition: "all(s in output.lower() for s in ['power', 'wisdom', 'resolve', 'influence', 'transformation', 'merit'])"
+
+  - name: fact_files_educational
+    description: Fact files must be described as historically specific
+    weight: 3
+    pass_condition: "'fact' in output.lower() or 'historical' in output.lower() or 'canonical' in output.lower()"
+
+  - name: legend_cards_mentioned
+    description: Legend cards system must be referenced
+    weight: 3
+    pass_condition: "'legend' in output.lower()"
+
+test_cases:
+  - input: "Describe the Angulimala card in the database"
+    expected_traits:
+      - transformation stat is 100
+      - famous story references the mustard seed or 999 murders
+      - legend is true
+      - archetype is Redeemed Disciple
+
+  - input: "Describe the Sujata card"
+    expected_traits:
+      - power stat is 35 (trap card)
+      - merit stat is above 88
+      - famous story references offering milk rice
+      - tier is bronze

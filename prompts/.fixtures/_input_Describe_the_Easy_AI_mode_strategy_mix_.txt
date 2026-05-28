@@ -1,0 +1,10 @@
+Four AI difficulty modes in Dharma Duel:
+
+easy: 20% top stats / 30% middle / 50% weak stats - low AI win rate (~35-40%)
+moderate: 40% top / 40% middle / 20% weak - medium AI win rate (~45-50%)
+hard: 85% top / 10% middle / 5% weak - high AI win rate (~55-60%)
+smart: 60% top 2 stats / 30% middle stats / 10% weak stats - strategic human feel (~45-48%)
+
+Easy AI mode deliberately picks weak stats 50% of the time, making it beatable for beginners. The 60% / 30% / 10% smart mode mix gives Smart AI its human-like behaviour. The computer_choose_stat function handles all four modes.
+
+The Dharma Council story introduces the game and the four modes are accessible from the difficulty selection menu after clicking VS COMPUTER. Card backs show pygame.draw graphics (Dharmachakra wheel) not text. Ranking sort shows cards 1 to 40 by overall rating.

@@ -1,0 +1,29 @@
+{
+  "prompt": "archetype-naming",
+  "timestamp": "2026-05-28T21:52:01.505522+00:00",
+  "cases_run": 2,
+  "avg_score": 0.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What is Angulimala's archetype and legend status?"
+      },
+      "output": "",
+      "score": null,
+      "passed": null,
+      "criteria": []
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "What is the difference between Khema and Visakha's archetypes?"
+      },
+      "output": "",
+      "score": null,
+      "passed": null,
+      "criteria": []
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Dharma Duel includes 40 legendary Buddhist figures across main.py, game.py, card.py, ui.py, with data in cards.json.
+
+Key characters: Buddha, Sariputta, Maha Moggallana, Angulimala, Ananda, Maha Kassapa, Anuruddha, Upali, Rahula, Devadatta, Siddhartha, Anna Kondanna, Emperor Ashoka, Sujata, Amrapali, Kisa Gotami, Queen Mallika, Visakha, Khema, Uppalavanna, Mara and His Retinue, Mara's Daughters, Mara's Army, Devaputra Mara, Sakka, Brahma Sahampati, Vessantara, Mucalinda Naga, King Bimbisara, King Pasenadi, Anathapindika, and more.
+
+Each card has: name, archetype, fact_file (2-3 bullet points of historical information), famous_story (1-2 sentences), and stats for power, wisdom, resolve, influence, transformation, merit.
+
+The deck has 40 cards total. 4 cards have legend status: Buddha, Siddhartha, Angulimala, Vessantara. Cards have tiers: platinum (Buddha only), gold, silver, bronze.
+
+The v1.0 prototype scope was minimal and iterative: load cards, display two, compare stats, basic win/lose.

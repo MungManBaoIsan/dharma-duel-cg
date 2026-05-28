@@ -1,0 +1,10 @@
+The card viewer Ranking sort feature shows all 40 cards ordered 1 to 40 by overall_rating.
+
+Cards ranked 1-5:
+1. Buddha (97.5) - platinum
+2. Anna Kondanna (90.7) - gold
+3. Maha Moggallana (90.0) - gold
+4. Sariputta (89.3) - gold
+5. Maha Kassapa (88.2) - gold
+
+The card viewer uses pygame.draw for the card display and the Dharmachakra wheel card back. The Dharma Council story is accessible from the main menu. AI modes available: easy, moderate, hard, smart. The smart mode uses 60% optimal picks to feel human-like.

@@ -1,0 +1,79 @@
+{
+  "prompt": "archetype-naming",
+  "timestamp": "2026-05-28T22:18:40.155398+00:00",
+  "cases_run": 2,
+  "avg_score": 1.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What is Angulimala's archetype and legend status?"
+      },
+      "output": "Angulimala archetype: Redeemed Disciple\nlegend: true\n\nAngulimala is one of 4 legend cards (alongside Buddha, Siddhartha, Vessantara).\n\nThe archetype was chosen specifically to highlight his unique transformation narrative rather than using a generic category label.\n\nThe split between Chief Bhikkhunis (ordained nuns like Khema) and Chief Laywomen (lay supporters like Visakha) reflects important Buddhist distinctions.\n\nLegend cards have gold borders and a star icon. Only 4 of 40 cards have legend status, making them rare and exciting to draw.\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "no_deprecated_archetypes",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "legend_cards_four_only",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "legend_card_names_present",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "female_archetypes_split",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "What is the difference between Khema and Visakha's archetypes?"
+      },
+      "output": "Khema archetype: Chief Bhikkhunis\nVisakha archetype: Chief Laywomen\n\nThese are different archetypes. A generic combined label was replaced because it conflated ordained nuns with lay women.\n\nKhema and Uppalavanna are Chief Bhikkhunis - ordained nuns (bhikkhunis) living under the Vinaya rules.\nVisakha and Queen Mallika are Chief Laywomen - lay female supporters who remained householders.\n\nKey archetype changes improved clarity and accuracy. Angulimala's archetype became \"Redeemed Disciple\". Legend cards: Buddha, Siddhartha, Angulimala, Vessantara.\n\nThe legend system marks 4 special cards with gold borders. No deprecated archetypes remain in the current cards.json.\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "no_deprecated_archetypes",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "legend_cards_four_only",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "legend_card_names_present",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "female_archetypes_split",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

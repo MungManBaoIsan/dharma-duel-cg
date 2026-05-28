@@ -1,0 +1,91 @@
+{
+  "prompt": "ai-and-ui-features",
+  "timestamp": "2026-05-28T22:03:40.561290+00:00",
+  "cases_run": 2,
+  "avg_score": 0.084,
+  "all_passed": false,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "Describe the Easy AI mode strategy mix"
+      },
+      "output": "Easy AI mode strategy mix:\n\n20% - picks from top 2 stats (aggressive/optimal play)\n30% - picks from middle stats (moderate play)\n50% - picks from bottom 2 stats (weak play / deliberate mistakes)\n\nThis gives the AI a low win rate of approximately 35-40%, making it suitable for beginners and players who are still learning the cards.\n\nEasy mode is designed for:\n- Teaching children or newcomers about Buddhist figures\n- Classroom or monastery settings where winning matters less than engagement\n- Players who want to learn the card stats without losing repeatedly\n\nThe frequent weak stat picks mean players can win even with average cards, building confidence before trying harder difficulty levels.\n",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "four_difficulty_modes",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "smart_mode_distribution",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "ranking_sort_present",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "dharmachakra_is_drawn_not_text",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "story_references_dharma_council",
+          "passed": false,
+          "weight": 2,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Describe the card viewer ranking feature"
+      },
+      "output": "The card viewer ranking feature shows all 40 cards ordered by overall rating from strongest to weakest.\n\nClicking the \"Ranking\" sort button in the card viewer displays:\n- Rank numbers 1 to 40 in the first column\n- Cards sorted from highest overall rating (Buddha at 97.5) to lowest (Mara's Army at 47.2)\n- Each row shows the card name plus all 6 stats\n- Color coding: gold for high values, green for good values, cream for standard\n\nTop 5 ranked cards:\n1. Buddha - 97.5 (Platinum)\n2. Anna Kondanna - 90.7 (Gold)\n3. Maha Moggallana - 90.0 (Gold)\n4. Sariputta - 89.3 (Gold)\n5. Maha Kassapa - 88.2 (Gold)\n\nThe ranking view helps players study the full deck hierarchy before playing and identify which cards are strongest in specific stats.\n",
+      "score": 0.167,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "four_difficulty_modes",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "smart_mode_distribution",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "ranking_sort_present",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "dharmachakra_is_drawn_not_text",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "story_references_dharma_council",
+          "passed": false,
+          "weight": 2,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

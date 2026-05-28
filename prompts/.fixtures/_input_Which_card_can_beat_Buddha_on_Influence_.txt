@@ -1,0 +1,8 @@
+Emperor Ashoka beats Buddha on Influence: Ashoka 95 vs Buddha 90.
+
+This is the only stat where any card reliably beats Buddha. All other stats are either Buddha 100 (unbeatable) or Buddha 95 (ties only, no cards beat him on power).
+
+Buddha overall_rating: 97.5 (platinum tier).
+Ashoka overall_rating: 87.5 (gold tier).
+
+The 49-50% win rate simulation confirms near-perfect game balance despite Buddha's strength. Gold, silver, and bronze tier cards all have paths to winning specific stats.

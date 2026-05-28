@@ -1,0 +1,91 @@
+{
+  "prompt": "balance-tuning",
+  "timestamp": "2026-05-28T21:52:10.186982+00:00",
+  "cases_run": 2,
+  "avg_score": 0.0,
+  "all_passed": false,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What are Buddha's final stats and overall rating?"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "buddha_not_all_100s",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "buddha_power_95",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "overall_ratings_present",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "tier_assignments_mentioned",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "game_balance_near_50_50",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Which card can beat Buddha on Influence?"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "buddha_not_all_100s",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "buddha_power_95",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "overall_ratings_present",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "tier_assignments_mentioned",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "game_balance_near_50_50",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

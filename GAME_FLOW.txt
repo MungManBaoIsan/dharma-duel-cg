@@ -1,0 +1,118 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                   DHARMA DUEL CARD GAME - VISUAL FLOW                      ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+SCREEN 1: MAIN MENU
+┌────────────────────────────────────────────────────────────────────────┐
+│                                                                        │
+│                         DHARMA DUEL                                    │
+│                         Card Game                                      │
+│                                                                        │
+│                  Ancient India • Buddha's Time                         │
+│                                                                        │
+│                  Top Trumps style card battle                          │
+│                  Choose your best stat to win cards                    │
+│                                                                        │
+│                  Click START to begin                                  │
+│                                                                        │
+│                      ┌──────────┐                                      │
+│                      │  START   │                                      │
+│                      └──────────┘                                      │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+
+
+SCREEN 2: GAMEPLAY (YOUR TURN)
+┌────────────────────────────────────────────────────────────────────────┐
+│ Your Cards: 20  Rounds Won: 5        Computer Cards: 19  Rounds Won: 4│
+│                                                                        │
+│                    YOUR TURN - Choose a stat                           │
+│                                                                        │
+│  ┌─────────────────────────┐      ┌─────────────────────────┐        │
+│  │ Angulimala              │      │ ?????                   │        │
+│  │ Other Great Disciples   │      │ Hidden Card             │        │
+│  │ ───────────────────     │      │ ───────────────────     │        │
+│  │ • Former serial killer  │      │ Stats hidden until      │        │
+│  │ • Killed 999 people     │      │ you choose              │        │
+│  │ • Became arahant        │      │                         │        │
+│  │ ───────────────────     │      │ ───────────────────     │        │
+│  │ [Power          90] ←──Click   │ Power           ???     │        │
+│  │ [Wisdom         70]     │      │ Wisdom          ???     │        │
+│  │ [Resolve        85]     │      │ Resolve         ???     │        │
+│  │ [Influence      60]     │      │ Influence       ???     │        │
+│  │ [Transformation 100]    │      │ Transformation  ???     │        │
+│  │ [Mythic Sig.    88]     │      │ Mythic Sig.     ???     │        │
+│  │ ───────────────────     │      │ ───────────────────     │        │
+│  │ Famous Story:           │      │ Famous Story:           │        │
+│  │ Chased Buddha to kill   │      │ [Hidden]                │        │
+│  │ him but couldn't...     │      │                         │        │
+│  └─────────────────────────┘      └─────────────────────────┘        │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+
+
+SCREEN 3: RESULT DISPLAY (3 SECONDS)
+┌────────────────────────────────────────────────────────────────────────┐
+│ Your Cards: 21  Rounds Won: 6        Computer Cards: 18  Rounds Won: 4│
+│                                                                        │
+│          ┌───────────────────────────────────────────┐                │
+│          │ You win! Transformation: 100 vs 65       │                │
+│          └───────────────────────────────────────────┘                │
+│                                                                        │
+│  ┌─────────────────────────┐      ┌─────────────────────────┐        │
+│  │ Angulimala              │      │ King Pasenadi           │        │
+│  │ Other Great Disciples   │      │ Important Royal Figures │        │
+│  │ ───────────────────     │      │ ───────────────────     │        │
+│  │ • Former serial killer  │      │ • King of Kosala       │        │
+│  │ • Killed 999 people     │      │ • Buddha's friend      │        │
+│  │ • Became arahant        │      │ • Had many talks       │        │
+│  │ ───────────────────     │      │ ───────────────────     │        │
+│  │ Power          90       │      │ Power          80       │        │
+│  │ Wisdom         70       │      │ Wisdom         75       │        │
+│  │ Resolve        85       │      │ Resolve        70       │        │
+│  │ Influence      60       │      │ Influence      85       │        │
+│  │ Transformation 100 ✓    │      │ Transformation 65       │        │
+│  │ Mythic Sig.    88       │      │ Mythic Sig.    72       │        │
+│  │ ───────────────────     │      │ ───────────────────     │        │
+│  │ Famous Story:           │      │ Famous Story:           │        │
+│  │ Chased Buddha to kill   │      │ Came to Buddha dusty   │        │
+│  │ him but couldn't...     │      │ from travel...          │        │
+│  └─────────────────────────┘      └─────────────────────────┘        │
+│                                                                        │
+│              (Click anywhere to continue or wait 5 seconds)            │
+└────────────────────────────────────────────────────────────────────────┘
+
+
+SCREEN 4: GAME OVER
+┌────────────────────────────────────────────────────────────────────────┐
+│                                                                        │
+│                                                                        │
+│                          VICTORY!                                      │
+│                                                                        │
+│              You have collected all the cards!                         │
+│                                                                        │
+│                                                                        │
+│                      ┌──────────────┐                                 │
+│                      │  PLAY AGAIN  │                                 │
+│                      └──────────────┘                                 │
+│                                                                        │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════
+
+GAME CONTROLS:
+• Mouse - Click stats on your turn
+• Mouse - Click anywhere to skip result screen
+• Close Window - Quit game
+
+COLOR SCHEME:
+• Background: Deep maroon (traditional Buddhist color)
+• Highlights: Gold and saffron orange
+• Cards: Cream/beige with brown borders
+• Text: Black and dark gray
+• Results: Green (win), Red (lose), Blue (tie)
+
+═══════════════════════════════════════════════════════════════════════════

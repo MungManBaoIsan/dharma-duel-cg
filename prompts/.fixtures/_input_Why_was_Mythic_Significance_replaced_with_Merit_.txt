@@ -1,0 +1,12 @@
+Mythic Significance was replaced with Merit. Mythic Significance had no canonical source in the Pali Canon.
+
+Merit (punna) is grounded in the Four Stages of Enlightenment and the Etadagga Sutta (AN 1.188-234).
+
+Merit is universal - it applies to all 40 figures: monks, kings, deities, Mara, and Devadatta all have merit scores. Mara has merit 25, Devadatta has merit 30 - both correctly low for antagonist figures.
+
+Canonical scale used:
+- 100 = Samma-Sambuddha (Buddha alone)
+- 95-98 = Arahant (fully enlightened)
+- 65-72 = Stream-enterer (Sotapanna)
+
+Historical accuracy for the sixth stat rose from approximately 50-60% to 85-90% after this change. The old field name no longer appears anywhere in the updated database.

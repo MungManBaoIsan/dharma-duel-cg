@@ -1,0 +1,91 @@
+{
+  "prompt": "balance-tuning",
+  "timestamp": "2026-05-28T22:15:18.236380+00:00",
+  "cases_run": 2,
+  "avg_score": 1.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What are Buddha's final stats and overall rating?"
+      },
+      "output": "Buddha final stats (v2.9):\n\npower: 95\nwisdom: 100\nresolve: 100\ninfluence: 90\ntransformation: 100\nmerit: 100\n\noverall_rating: 97.5\ntier: platinum\n\nBuddha is the only platinum tier card. He is not all-100s - power and influence are below 100 for game balance. The gold tier cards include Sariputta (89.3), Moggallana (90.0), Kassapa (88.2), Anna Kondanna (90.7), Ashoka (87.5). Silver and bronze tier cards make up the rest.\n\n49% player win rate, 50% computer win rate across 10,000 game simulation - near perfect balance.\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "buddha_not_all_100s",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "buddha_power_95",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "overall_ratings_present",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "tier_assignments_mentioned",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "game_balance_near_50_50",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Which card can beat Buddha on Influence?"
+      },
+      "output": "Emperor Ashoka beats Buddha on Influence: Ashoka 95 vs Buddha 90.\n\nThis is the only stat where any card reliably beats Buddha. All other stats are either Buddha 100 (unbeatable) or Buddha 95 (ties only, no cards beat him on power).\n\nBuddha overall_rating: 97.5 (platinum tier).\nAshoka overall_rating: 87.5 (gold tier).\n\nThe 49-50% win rate simulation confirms near-perfect game balance despite Buddha's strength. Gold, silver, and bronze tier cards all have paths to winning specific stats.\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "buddha_not_all_100s",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "buddha_power_95",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "overall_ratings_present",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "tier_assignments_mentioned",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "game_balance_near_50_50",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

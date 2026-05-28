@@ -1,0 +1,22 @@
+Angulimala card from cards.json (40 cards total):
+
+name: Angulimala
+archetype: Redeemed Disciple
+legend: true
+tier: silver
+overall_rating: 83.8
+
+fact_file:
+- Serial killer who murdered 999 people, collecting fingers as a garland
+- Was stopped by Buddha through a supernatural display of the Dhamma
+- Achieved full arahantship, a historically canonical attainment per the Angulimala Sutta
+
+famous_story: The Buddha walked calmly while Angulimala ran at full speed but could never close the gap, prompting him to stop and eventually ordain.
+
+stats (power, wisdom, resolve, influence, transformation, merit):
+  power: 90
+  wisdom: 70
+  resolve: 85
+  influence: 75
+  transformation: 100
+  merit: 98

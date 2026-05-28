@@ -1,0 +1,29 @@
+{
+  "prompt": "game-mechanics",
+  "timestamp": "2026-05-28T21:52:01.532118+00:00",
+  "cases_run": 2,
+  "avg_score": 0.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "Explain how the turn system works when a player wins a round"
+      },
+      "output": "",
+      "score": null,
+      "passed": null,
+      "criteria": []
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Explain what happens when both cards tie on the selected stat"
+      },
+      "output": "",
+      "score": null,
+      "passed": null,
+      "criteria": []
+    }
+  ]
+}

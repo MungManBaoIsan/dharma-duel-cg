@@ -1,0 +1,79 @@
+{
+  "prompt": "stat-system-redesign",
+  "timestamp": "2026-05-28T21:52:10.214702+00:00",
+  "cases_run": 2,
+  "avg_score": 0.0,
+  "all_passed": false,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What is Angulimala's merit score and why?"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "merit_field_replaces_mythic",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "merit_scale_respected",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "antagonist_merit_low",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "canonical_source_cited",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Why was Mythic Significance replaced with Merit?"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "merit_field_replaces_mythic",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "merit_scale_respected",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "antagonist_merit_low",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "canonical_source_cited",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

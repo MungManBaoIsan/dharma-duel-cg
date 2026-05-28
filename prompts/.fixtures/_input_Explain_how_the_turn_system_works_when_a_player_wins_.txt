@@ -1,0 +1,11 @@
+When a player wins a round in Dharma Duel:
+
+1. The winner takes both cards and places them at the bottom of their deck.
+2. The round_winner becomes the active_player for the next round (winner controls).
+3. The active_player selects a stat on their own card; the opponent's card is hidden (showing the Dharmachakra wheel) until after selection.
+4. The game_mode flag (computer or player) determines whether the computer auto-selects or waits for human input.
+5. After both stats are compared, the is_player_card determines which side was clickable.
+6. The result screen shows NEXT ROUND button - no auto-advance, player clicks to continue.
+
+Winning streaks are possible: keep winning and active_player stays set to you.
+Ties send cards to the battle_pile (battle pile grows with each successive tie).

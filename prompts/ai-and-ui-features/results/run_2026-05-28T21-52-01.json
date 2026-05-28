@@ -1,0 +1,29 @@
+{
+  "prompt": "ai-and-ui-features",
+  "timestamp": "2026-05-28T21:52:01.500233+00:00",
+  "cases_run": 2,
+  "avg_score": 0.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "Describe the Easy AI mode strategy mix"
+      },
+      "output": "",
+      "score": null,
+      "passed": null,
+      "criteria": []
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Describe the card viewer ranking feature"
+      },
+      "output": "",
+      "score": null,
+      "passed": null,
+      "criteria": []
+    }
+  ]
+}

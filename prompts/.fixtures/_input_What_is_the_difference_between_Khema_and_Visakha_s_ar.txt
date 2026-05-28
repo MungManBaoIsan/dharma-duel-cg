@@ -1,0 +1,11 @@
+Khema archetype: Chief Bhikkhunis
+Visakha archetype: Chief Laywomen
+
+These are different archetypes. A generic combined label was replaced because it conflated ordained nuns with lay women.
+
+Khema and Uppalavanna are Chief Bhikkhunis - ordained nuns (bhikkhunis) living under the Vinaya rules.
+Visakha and Queen Mallika are Chief Laywomen - lay female supporters who remained householders.
+
+Key archetype changes improved clarity and accuracy. Angulimala's archetype became "Redeemed Disciple". Legend cards: Buddha, Siddhartha, Angulimala, Vessantara.
+
+The legend system marks 4 special cards with gold borders. No deprecated archetypes remain in the current cards.json.

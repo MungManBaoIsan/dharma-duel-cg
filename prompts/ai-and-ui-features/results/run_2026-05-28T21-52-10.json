@@ -1,0 +1,91 @@
+{
+  "prompt": "ai-and-ui-features",
+  "timestamp": "2026-05-28T21:52:10.143899+00:00",
+  "cases_run": 2,
+  "avg_score": 0.0,
+  "all_passed": false,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "Describe the Easy AI mode strategy mix"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "four_difficulty_modes",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "smart_mode_distribution",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "ranking_sort_present",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "dharmachakra_is_drawn_not_text",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "story_references_dharma_council",
+          "passed": false,
+          "weight": 2,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Describe the card viewer ranking feature"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "four_difficulty_modes",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "smart_mode_distribution",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "ranking_sort_present",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        },
+        {
+          "name": "dharmachakra_is_drawn_not_text",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "story_references_dharma_council",
+          "passed": false,
+          "weight": 2,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

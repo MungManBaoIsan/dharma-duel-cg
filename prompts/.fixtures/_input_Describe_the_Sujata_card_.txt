@@ -1,0 +1,22 @@
+Sujata card from cards.json (40 cards total):
+
+name: Sujata
+archetype: Benefactor
+legend: false
+tier: bronze
+overall_rating: 66.2
+
+fact_file (historically specific, canonical facts):
+- A village girl who offered milk rice to the emaciated ascetic Siddhartha
+- Her act of dana (generosity) restored his strength before his enlightenment
+- Represents lay merit - her merit score rivals powerful deities
+
+famous_story: Sujata offered a bowl of milk rice to Siddhartha near the Bodhi tree. This nourishment ended his extreme asceticism and led directly to the Middle Way and enlightenment.
+
+stats (power, wisdom, resolve, influence, transformation, merit):
+  power: 35  (trap card - very low)
+  wisdom: 70
+  resolve: 65
+  influence: 50
+  transformation: 85
+  merit: 92

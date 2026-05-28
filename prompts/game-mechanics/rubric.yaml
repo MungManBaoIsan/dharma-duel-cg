@@ -1,0 +1,40 @@
+# Evaluation rubric for: game-mechanics
+
+prompt: game-mechanics
+version: v2
+criteria:
+  - name: winner_becomes_active_player
+    description: resolve_round must set active_player to the round winner, not alternate
+    weight: 5
+    pass_condition: "'round_winner' in output or 'winner' in output.lower()"
+
+  - name: opponent_card_hidden_before_selection
+    description: Opponent card must not show stats before a stat is selected
+    weight: 5
+    pass_condition: "'hidden' in output.lower() or 'dharmachakra' in output.lower() or 'is_player_card' in output"
+
+  - name: no_auto_advance
+    description: Result state must require button click, not auto-advance
+    weight: 4
+    pass_condition: "'NEXT ROUND' in output or 'next_round' in output or 'event.clear' in output"
+
+  - name: pass_and_play_right_card_clickable
+    description: In Pass & Play, Player 2 card on right must be clickable on Player 2 turn
+    weight: 5
+    pass_condition: "'game_mode' in output or 'is_player_card' in output or 'active_player' in output"
+
+  - name: battle_pile_accumulates
+    description: On tie, battle pile must accumulate before winner takes all
+    weight: 3
+    pass_condition: "'battle_pile' in output or 'battle pile' in output.lower()"
+
+test_cases:
+  - input: "Explain how the turn system works when a player wins a round"
+    expected_traits:
+      - winner controls next round
+      - not alternating turns
+
+  - input: "Explain what happens when both cards tie on the selected stat"
+    expected_traits:
+      - cards go to battle pile
+      - winner takes all accumulated cards

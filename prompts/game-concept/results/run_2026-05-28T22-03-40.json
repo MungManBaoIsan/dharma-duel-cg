@@ -1,0 +1,91 @@
+{
+  "prompt": "game-concept",
+  "timestamp": "2026-05-28T22:03:40.624633+00:00",
+  "cases_run": 2,
+  "avg_score": 0.5,
+  "all_passed": false,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What files does the Dharma Duel project scaffold include?"
+      },
+      "output": "The Dharma Duel project scaffold includes the following files:\n\nmain.py - entry point, starts the game loop\ngame.py - game logic, turn management, battle pile\ncard.py - Card class, loads cards from JSON\nui.py - Pygame rendering, menus, card display\nrequirements.txt - just pygame\n\nData:\ndata/cards.json - all 40 card records\n\nDocumentation:\nREADME.md - setup and overview\nQUICKSTART.md - 3-step quick start\ndocs/cards.md - how to add/modify cards\n\nThe project uses an iterative v1.0 prototype approach, keeping the scope minimal and playable before adding features.\n",
+      "score": 0.81,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "all_source_files_mentioned",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "json_data_file_mentioned",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "character_roster_coverage",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "modular_structure_described",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "iterative_scope_defined",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "What characters are included in the Dharma Duel card game?"
+      },
+      "output": "The Dharma Duel card game includes 40 legendary Buddhist figures:\n\nChief Disciples: Sariputta, Maha Moggallana\nForemost Disciples: Maha Kassapa, Ananda, Anuruddha, Upali, Angulimala, Channa, Rahula, Kisa Gotami, Anna Kondanna\nFamily: Siddhartha, Suddhodana, Queen Maya, Mahapajapati, Yasodhara, Devadatta, Nanda\nRoyal Patrons: King Bimbisara, King Pasenadi\nThe Awakened One: Buddha\nForces of Mara: Mara and His Retinue, Mara's Daughters, Mara's Army, Devaputra Mara\nAnd many more including Visakha, Khema, Uppalavanna, Anathapindika, Emperor Ashoka, Sujata, Amrapali, Vessantara, Sakka, Brahma Sahampati, Mucalinda Naga.\n",
+      "score": 0.19,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "all_source_files_mentioned",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "json_data_file_mentioned",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "character_roster_coverage",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "modular_structure_described",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "iterative_scope_defined",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

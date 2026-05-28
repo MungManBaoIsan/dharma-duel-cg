@@ -1,0 +1,16 @@
+The Dharma Duel project scaffold includes these files:
+
+main.py - entry point, starts the game loop
+game.py - game logic, turn management, battle pile
+card.py - Card class definition
+ui.py - Pygame rendering, menus, card display
+requirements.txt - just pygame
+data/cards.json - all 40 card records
+README.md - setup and overview
+docs/cards.md - how to add new cards
+
+Characters include Buddha, Sariputta, Angulimala, Ananda, Mara, Moggallana, Kassapa, Anuruddha, Upali, Rahula, Devadatta, Siddhartha, Ashoka, and 27 more.
+
+The project uses an iterative v1.0 prototype approach - minimal and playable first, features added in later versions.
+
+fact_file and famous_story fields are on every card. Each card also has archetype, legend status (4 legend cards total), overall_rating, tier (platinum/gold/silver/bronze), and stats: power, wisdom, resolve, influence, transformation, merit.

@@ -1,0 +1,91 @@
+{
+  "prompt": "game-mechanics",
+  "timestamp": "2026-05-28T21:52:10.208019+00:00",
+  "cases_run": 2,
+  "avg_score": 0.0,
+  "all_passed": false,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "Explain how the turn system works when a player wins a round"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "winner_becomes_active_player",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "opponent_card_hidden_before_selection",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "no_auto_advance",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "pass_and_play_right_card_clickable",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "battle_pile_accumulates",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Explain what happens when both cards tie on the selected stat"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.0,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "winner_becomes_active_player",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "opponent_card_hidden_before_selection",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "no_auto_advance",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "pass_and_play_right_card_clickable",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "battle_pile_accumulates",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

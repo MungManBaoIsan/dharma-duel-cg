@@ -1,0 +1,9 @@
+When both cards tie on the selected stat:
+
+1. Both cards go to the battle_pile (battle pile). The active_player remains unchanged.
+2. Each player draws a fresh top card from their deck.
+3. The same active_player selects a new stat from their new card. The opponent's card stays hidden (dharmachakra wheel / is_player_card remains false for opponent).
+4. If another tie: battle pile grows again (4, 6, 8+ cards).
+5. First player to win a non-tie round takes ALL cards: battle pile plus the two current top cards.
+
+The NEXT ROUND button only appears after the battle resolves. game_mode determines computer vs human turn handling (round_winner logic applies).

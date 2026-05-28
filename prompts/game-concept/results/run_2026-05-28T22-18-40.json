@@ -1,0 +1,91 @@
+{
+  "prompt": "game-concept",
+  "timestamp": "2026-05-28T22:18:40.179168+00:00",
+  "cases_run": 2,
+  "avg_score": 1.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What files does the Dharma Duel project scaffold include?"
+      },
+      "output": "The Dharma Duel project scaffold includes these files:\n\nmain.py - entry point, starts the game loop\ngame.py - game logic, turn management, battle pile\ncard.py - Card class definition\nui.py - Pygame rendering, menus, card display\nrequirements.txt - just pygame\ndata/cards.json - all 40 card records\nREADME.md - setup and overview\ndocs/cards.md - how to add new cards\n\nCharacters include Buddha, Sariputta, Angulimala, Ananda, Mara, Moggallana, Kassapa, Anuruddha, Upali, Rahula, Devadatta, Siddhartha, Ashoka, and 27 more.\n\nThe project uses an iterative v1.0 prototype approach - minimal and playable first, features added in later versions.\n\nfact_file and famous_story fields are on every card. Each card also has archetype, legend status (4 legend cards total), overall_rating, tier (platinum/gold/silver/bronze), and stats: power, wisdom, resolve, influence, transformation, merit.\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "all_source_files_mentioned",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "json_data_file_mentioned",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "character_roster_coverage",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "modular_structure_described",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "iterative_scope_defined",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "What characters are included in the Dharma Duel card game?"
+      },
+      "output": "Dharma Duel includes 40 legendary Buddhist figures across main.py, game.py, card.py, ui.py, with data in cards.json.\n\nKey characters: Buddha, Sariputta, Maha Moggallana, Angulimala, Ananda, Maha Kassapa, Anuruddha, Upali, Rahula, Devadatta, Siddhartha, Anna Kondanna, Emperor Ashoka, Sujata, Amrapali, Kisa Gotami, Queen Mallika, Visakha, Khema, Uppalavanna, Mara and His Retinue, Mara's Daughters, Mara's Army, Devaputra Mara, Sakka, Brahma Sahampati, Vessantara, Mucalinda Naga, King Bimbisara, King Pasenadi, Anathapindika, and more.\n\nEach card has: name, archetype, fact_file (2-3 bullet points of historical information), famous_story (1-2 sentences), and stats for power, wisdom, resolve, influence, transformation, merit.\n\nThe deck has 40 cards total. 4 cards have legend status: Buddha, Siddhartha, Angulimala, Vessantara. Cards have tiers: platinum (Buddha only), gold, silver, bronze.\n\nThe v1.0 prototype scope was minimal and iterative: load cards, display two, compare stats, basic win/lose.\n",
+      "score": 1.0,
+      "passed": true,
+      "criteria": [
+        {
+          "name": "all_source_files_mentioned",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "json_data_file_mentioned",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "character_roster_coverage",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "modular_structure_described",
+          "passed": true,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "iterative_scope_defined",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

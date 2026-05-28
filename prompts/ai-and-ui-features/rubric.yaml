@@ -1,0 +1,40 @@
+# Evaluation rubric for: ai-and-ui-features
+
+prompt: ai-and-ui-features
+version: v3
+criteria:
+  - name: four_difficulty_modes
+    description: game.py must implement Easy, Moderate, Hard, and Smart AI strategies
+    weight: 5
+    pass_condition: "all(mode in output for mode in ['easy', 'moderate', 'hard', 'smart'])"
+
+  - name: smart_mode_distribution
+    description: Smart mode must use approximately 60/30/10 split across stat tiers
+    weight: 4
+    pass_condition: "'60' in output or '60%' in output"
+
+  - name: ranking_sort_present
+    description: Card viewer must include a Ranking sort option ordering cards 1-40 by overall rating
+    weight: 3
+    pass_condition: "'ranking' in output.lower() or 'Ranking' in output"
+
+  - name: dharmachakra_is_drawn_not_text
+    description: Card back must use pygame.draw functions, not a text character
+    weight: 4
+    pass_condition: "'pygame.draw' in output"
+
+  - name: story_references_dharma_council
+    description: Story screen text must reference Dharma Council
+    weight: 2
+    pass_condition: "'Dharma Council' in output"
+
+test_cases:
+  - input: "Describe the Easy AI mode strategy mix"
+    expected_traits:
+      - mentions low win rate for AI
+      - mentions picking weak stats more often
+
+  - input: "Describe the card viewer ranking feature"
+    expected_traits:
+      - mentions sorting by overall rating
+      - mentions rank numbers 1 to 40

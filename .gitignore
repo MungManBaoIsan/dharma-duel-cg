@@ -1,0 +1,12 @@
+*.zip
+*.exe
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+*.spec
+prompts/*/results/
+prompts/results-summary.md
+scripts/gen_fingerprints.py
+scripts/show_fingerprints.py

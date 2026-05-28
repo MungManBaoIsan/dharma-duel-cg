@@ -1,0 +1,79 @@
+{
+  "prompt": "archetype-naming",
+  "timestamp": "2026-05-28T22:03:40.568731+00:00",
+  "cases_run": 2,
+  "avg_score": 0.294,
+  "all_passed": false,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What is Angulimala's archetype and legend status?"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.294,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "no_deprecated_archetypes",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "legend_cards_four_only",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "legend_card_names_present",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "female_archetypes_split",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "What is the difference between Khema and Visakha's archetypes?"
+      },
+      "output": "MOCK_OUTPUT\nthis is a mock response\nGet started",
+      "score": 0.294,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "no_deprecated_archetypes",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "legend_cards_four_only",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "legend_card_names_present",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "female_archetypes_split",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

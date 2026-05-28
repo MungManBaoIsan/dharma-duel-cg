@@ -1,0 +1,91 @@
+{
+  "prompt": "game-mechanics",
+  "timestamp": "2026-05-28T22:03:40.635073+00:00",
+  "cases_run": 2,
+  "avg_score": 0.409,
+  "all_passed": false,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "Explain how the turn system works when a player wins a round"
+      },
+      "output": "When a player wins a round in Dharma Duel:\n\n1. The winner takes both cards (their own and the opponent's) and places them at the bottom of their deck.\n\n2. The winner becomes the active player for the next round. This is traditional Top Trumps: the winner controls the next turn.\n\n3. The active player can see their own card's stats while the opponent's card is hidden (showing the Dharmachakra wheel). They select the stat they want to compare.\n\n4. Winning streaks are possible - if you keep winning, you keep control. This creates momentum and rewards good stat selection.\n\nThe turn system uses active_player in game.py's resolve_round method. The round_winner is set to 'player' or 'computer', and active_player is updated to match the winner.\n",
+      "score": 0.682,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "winner_becomes_active_player",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "opponent_card_hidden_before_selection",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "no_auto_advance",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "pass_and_play_right_card_clickable",
+          "passed": true,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "battle_pile_accumulates",
+          "passed": false,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "Explain what happens when both cards tie on the selected stat"
+      },
+      "output": "When both cards tie on the selected stat:\n\n1. Both cards go to the battle pile face-up. The battle pile accumulates these tied cards.\n\n2. Each player draws the next card from the top of their deck.\n\n3. The same active player selects a new stat from their new top card.\n\n4. If another tie occurs, the process repeats - the battle pile grows: 2 cards, then 4, then 6, etc.\n\n5. When one player finally wins a non-tie round, they take ALL cards in the battle pile plus the two current top cards.\n\nThis means a lucky winning round after multiple ties can yield 6-10+ cards - a dramatic game-changing moment. The battle pile mechanic is traditional Top Trumps tie resolution (war-style).\n",
+      "score": 0.136,
+      "passed": false,
+      "criteria": [
+        {
+          "name": "winner_becomes_active_player",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "opponent_card_hidden_before_selection",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "no_auto_advance",
+          "passed": false,
+          "weight": 4,
+          "error": null
+        },
+        {
+          "name": "pass_and_play_right_card_clickable",
+          "passed": false,
+          "weight": 5,
+          "error": null
+        },
+        {
+          "name": "battle_pile_accumulates",
+          "passed": true,
+          "weight": 3,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

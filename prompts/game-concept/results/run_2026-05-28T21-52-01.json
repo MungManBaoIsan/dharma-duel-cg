@@ -1,0 +1,29 @@
+{
+  "prompt": "game-concept",
+  "timestamp": "2026-05-28T21:52:01.526165+00:00",
+  "cases_run": 2,
+  "avg_score": 0.0,
+  "all_passed": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "inputs": {
+        "input": "What files does the Dharma Duel project scaffold include?"
+      },
+      "output": "",
+      "score": null,
+      "passed": null,
+      "criteria": []
+    },
+    {
+      "case_index": 1,
+      "inputs": {
+        "input": "What characters are included in the Dharma Duel card game?"
+      },
+      "output": "",
+      "score": null,
+      "passed": null,
+      "criteria": []
+    }
+  ]
+}

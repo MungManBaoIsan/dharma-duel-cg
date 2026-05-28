@@ -1,0 +1,14 @@
+Angulimala merit score: 98
+
+This is arahant level on the canonical Four Stages of Enlightenment scale.
+The Etadagga Sutta (AN 1.188-234) from the Pali Canon provides the basis for this assignment.
+
+Merit scale:
+- 100 = Buddha (Samma-Sambuddha)
+- 95-98 = Arahant (fully enlightened)
+- 85-92 = Non-returner
+- 75-82 = Once-returner
+
+Angulimala achieved complete arahantship despite his violent past. Mara, Devadatta and the antagonist figures have much lower merit scores (below 35).
+
+Merit is now used instead of Mythic Significance because it is grounded in canonical Pali sources.

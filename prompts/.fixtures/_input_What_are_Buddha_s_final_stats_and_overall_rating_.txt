@@ -1,0 +1,15 @@
+Buddha final stats (v2.9):
+
+power: 95
+wisdom: 100
+resolve: 100
+influence: 90
+transformation: 100
+merit: 100
+
+overall_rating: 97.5
+tier: platinum
+
+Buddha is the only platinum tier card. He is not all-100s - power and influence are below 100 for game balance. The gold tier cards include Sariputta (89.3), Moggallana (90.0), Kassapa (88.2), Anna Kondanna (90.7), Ashoka (87.5). Silver and bronze tier cards make up the rest.
+
+49% player win rate, 50% computer win rate across 10,000 game simulation - near perfect balance.

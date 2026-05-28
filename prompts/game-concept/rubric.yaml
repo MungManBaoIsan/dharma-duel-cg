@@ -1,0 +1,42 @@
+# Evaluation rubric for: game-concept
+
+prompt: game-concept
+version: v1
+criteria:
+  - name: all_source_files_mentioned
+    description: Output must include main.py, game.py, card.py, ui.py
+    weight: 5
+    pass_condition: "all(f in output for f in ['main.py', 'game.py', 'card.py', 'ui.py'])"
+
+  - name: json_data_file_mentioned
+    description: Card data must be in a separate JSON file, not embedded in Python
+    weight: 5
+    pass_condition: "'cards.json' in output or '.json' in output"
+
+  - name: character_roster_coverage
+    description: Key character names must be present
+    weight: 4
+    pass_condition: "all(name in output for name in ['Buddha', 'Sariputta', 'Angulimala', 'Mara', 'Ananda'])"
+
+  - name: modular_structure_described
+    description: Game logic, UI, and data must be described as separate modules
+    weight: 4
+    pass_condition: "all(f in output for f in ['game.py', 'ui.py', 'card.py'])"
+
+  - name: iterative_scope_defined
+    description: v1.0 prototype scope must be described as minimal and playable
+    weight: 3
+    pass_condition: "'v1' in output or 'prototype' in output.lower() or 'iterative' in output.lower()"
+
+test_cases:
+  - input: "What files does the Dharma Duel project scaffold include?"
+    expected_traits:
+      - main.py as entry point
+      - cards.json as separate data file
+      - README.md with setup instructions
+
+  - input: "What characters are included in the Dharma Duel card game?"
+    expected_traits:
+      - at least 20 characters named
+      - includes Buddha, Sariputta, Angulimala
+      - includes Mara and his forces
