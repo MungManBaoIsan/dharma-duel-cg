@@ -5,7 +5,14 @@ Handles individual card data and display information.
 """
 
 import json
+import sys
 from pathlib import Path
+
+
+def _resource_path(relative_path):
+    """Get absolute path — works both in dev and as a PyInstaller bundle."""
+    base = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
+    return base / relative_path
 
 
 class Card:
@@ -121,7 +128,7 @@ class CardDeck:
                              the data/ folder next to this script.
         """
         if json_path is None:
-            json_path = Path(__file__).resolve().parent / "data" / "cards.json"
+            json_path = _resource_path(Path("data") / "cards.json")
 
         self.cards = []
         self.load_cards(json_path)
