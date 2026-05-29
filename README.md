@@ -4,6 +4,8 @@
 
 A Top Trumps inspired card game featuring 40 legendary Buddhist figures — playable against a smart AI or a friend.
 
+![Dharma Duel — Dharma Wheel cover](cover.png)
+
 ## What It Does
 
 - **40 historically researched cards** — Buddhist figures from the Pali Canon, each with a fact file and famous story
