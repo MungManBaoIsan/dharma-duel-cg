@@ -1,4 +1,4 @@
-# Dharma Duel: Legends of Ancient India
+# DharmaDuel CG: Legends of Ancient India
 
 **[Play in browser](https://mungmanbaoisan.itch.io/dharma-duel-cg)** — best played on desktop or tablet in landscape mode. Click Play in browser, then go fullscreen.
 
