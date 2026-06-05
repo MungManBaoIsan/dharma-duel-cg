@@ -1,6 +1,6 @@
 # Prompt Library — Dharma Duel Card Game
 
-[![Prompt Eval](https://github.com/mungmanbaoisan/dharma-duel-cg/actions/workflows/prompt-eval.yml/badge.svg)](https://github.com/mungmanbaoisan/dharma-duel-cg/actions/workflows/prompt-eval.yml)
+[![Prompt Eval](https://github.com/joshuablakemorekay/dharma-duel-cg/actions/workflows/prompt-eval.yml/badge.svg)](https://github.com/joshuablakemorekay/dharma-duel-cg/actions/workflows/prompt-eval.yml)
 
 This folder documents the prompts used to build **Dharma Duel Card Game** — a Pygame Top Trumps game featuring 40 Buddhist figures from ancient India, developed from v1.0 to v2.9 using Claude as a coding and design collaborator.
 
